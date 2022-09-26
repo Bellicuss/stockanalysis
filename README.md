@@ -1,1 +1,6 @@
-# stockanalysis
+StockPort Predictive Sentiment Analysis
+Stock Prediction Using Twitter Sentiment Analysis In this project, we applied sentiment analysis and two statistical machine learning models: Random Forest and Support Vector Regression. These models are used to correlate tweets extracted from Twitter with company stock market movements. To analyze the impact on stock market forecasts, we performed sentiment analysis of Twitter data on both an all-day and hourly basis. Models are evaluated and compared using RMSE (Root Mean Square Error) values.
+
+Here is an overview of the project process flow:
+
+*Data collection and analysis: Stock market data is collected using the yfinance API and tweets are retrieved from Twitter using the GetOldTweets API. This step pre-processes the tweets, such as removing stop words and hyperlinks. * Sentiment analysis: VADER conducts sentiment analysis of tweets. Here, each tweet is given a sentiment score that determines whether the tweet is positive, negative, or neutral. *Processing: Rows with missing values, such as price values, are processed further. The data is split into training and test data along with mood values ​​and fed into the model. *Applying Regression Models: To predict stock market prices, this project used regression models of random forests and support vectors. We then use the RMSE score to validate model efficiency and analyze which model performs better on the dataset we used.
